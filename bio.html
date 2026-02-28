@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Alonso">
+    <meta name="description" content="Paulo Alonso — UI/UX Designer, Graphic Design & AI">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Paulo Alonso | Bio</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: TTHovesD;
+            src: url('fonts/TTHovesDemiBold.otf');
+        }
+
+        @font-face {
+            font-family: TTHovesM;
+            src: url('fonts/TTHovesMedium.otf');
+        }
+
+        @font-face {
+            font-family: TTHovesR;
+            src: url('fonts/TTHovesRegular.otf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #181818;
+            color: #e9e9e9;
+            font-family: TTHovesM;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .bio-container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+        }
+
+        /* Profile */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            border: 1px solid #323232;
+        }
+
+        .profile-name {
+            font-family: TTHovesD;
+            font-size: 26px;
+            letter-spacing: -0.5px;
+            color: #e9e9e9;
+        }
+
+        .profile-tagline {
+            font-family: TTHovesR;
+            font-size: 14px;
+            color: #5f5f5f;
+            letter-spacing: -0.2px;
+            line-height: 1.5;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 15px 22px;
+            border: 1px solid #2c2c2c;
+            border-radius: 3px;
+            text-decoration: none;
+            color: #e9e9e9;
+            font-family: TTHovesM;
+            font-size: 15px;
+            letter-spacing: -0.2px;
+            transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+            background: transparent;
+        }
+
+        .link-btn:hover {
+            background: #e9e9e9;
+            color: #181818;
+            border-color: #e9e9e9;
+        }
+
+        .link-btn i.icon {
+            font-size: 15px;
+            width: 18px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .link-btn span {
+            flex: 1;
+            text-align: center;
+        }
+
+        .link-btn i.arrow {
+            font-size: 13px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .link-btn:hover i.arrow {
+            opacity: 1;
+        }
+
+        /* Footer */
+        .bio-footer {
+            font-family: TTHovesR;
+            font-size: 13px;
+            color: #323232;
+            letter-spacing: -0.1px;
+        }
+
+        .bio-footer a {
+            color: #3f3f3f;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .bio-footer a:hover {
+            color: #e9e9e9;
+        }
+
+        @media (max-width: 560px) {
+            body {
+                padding: 48px 16px;
+            }
+
+            .profile-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bio-container">
+
+        <!-- Profile -->
+        <div class="profile">
+            <img src="assets/me.png" alt="Paulo Alonso" class="profile-img">
+            <h1 class="profile-name">Paulo Alonso</h1>
+            <p class="profile-tagline">UI/UX Designer · Graphic Design · AI<br>São Paulo, Brazil</p>
+        </div>
+
+        <!-- Links -->
+        <nav class="links">
+
+            <a href="https://pauloalonso.work" class="link-btn">
+                <i class="fa-solid fa-globe icon"></i>
+                <span>Portfolio</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://www.instagram.com/pauloalonsogd" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-instagram icon"></i>
+                <span>Instagram</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/paulo-alonso/" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-linkedin-in icon"></i>
+                <span>LinkedIn</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://www.behance.net/pauloalonso" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-behance icon"></i>
+                <span>Behance</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://dribbble.com/pauloalonso1" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-dribbble icon"></i>
+                <span>Dribbble</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://pauloalonsoy7wgsrcv.contra.com" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-solid fa-briefcase icon"></i>
+                <span>Contra</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://t.me/pauloa65" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-telegram icon"></i>
+                <span>Telegram</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="https://x.com/pauloalonso" target="_blank" rel="noopener" class="link-btn">
+                <i class="fa-brands fa-x-twitter icon"></i>
+                <span>X</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+            <a href="mailto:pauloa65@gmail.com" class="link-btn">
+                <i class="fa-solid fa-envelope icon"></i>
+                <span>Email</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+
+        </nav>
+
+        <!-- Footer -->
+        <p class="bio-footer">
+            <a href="https://pauloalonso.work">pauloalonso.work</a>
+        </p>
+
+    </div>
+</body>
+
+</html>
