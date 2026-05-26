@@ -96,11 +96,11 @@ const translations = {
   'pt-br': {
     'nav.index': 'Índice',
     'nav.approach': 'Abordagem',
-    'nav.location': 'Baseado em <br> São Paulo, Brasil',
+    'nav.location': 'São Paulo, <br>Brasil',
     'footer.reach': 'Fale',
     'footer.out': 'Comigo',
     'footer.available': 'Disponível <br> para projetos freelance',
-    'footer.location': 'Baseado em <br> São Paulo, Brasil',
+    'footer.location': 'São Paulo, <br>Brasil',
     'footer.invite': 'Para qualquer colaboração ou consulta, convido você a entrar em contato comigo!',
     'footer.rights': 'Todos os direitos reservados.',
     'index.available': 'Disponível para projetos freelance',
