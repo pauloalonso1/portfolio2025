@@ -125,10 +125,11 @@ nav .wrapper {
   display: flex;
   gap: 15vw;
 }
-nav h1 {
-  font-size: 36px;
-  font-family: TTHovesD;
-  letter-spacing: -1.5px;
+.nav-logo svg {
+  height: 38px;
+  width: 38px;
+  fill: currentColor;
+  display: block;
 }
 nav a {
   font-size: 24px;
@@ -138,6 +139,34 @@ nav a {
 nav .clock {
   font-size: 14px;
   width: 120px;
+}
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lang-opt {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: TTHovesD;
+  font-size: 24px;
+  letter-spacing: -1.5px;
+  padding: 0;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+.lang-opt.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.lang-sep {
+  font-size: 24px;
+  font-family: TTHovesD;
+  letter-spacing: -1.5px;
+  opacity: 0.25;
 }
 
 /* Breakpoints */
@@ -150,8 +179,13 @@ nav .clock {
   nav .wrapper {
     gap: 30vw;
   }
-  nav h1 {
-    font-size: 24px;
+  .nav-logo svg {
+    height: 28px;
+    width: 28px;
+  }
+  .lang-opt,
+  .lang-sep {
+    font-size: 20px;
     letter-spacing: -0.5px;
   }
   nav a {

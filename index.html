@@ -45,23 +45,34 @@
         <!-- Navbar -->
         <nav>
             <div class="wrapper">
-                <h1>Paulo Alonso</h1>
+                <div class="nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" aria-label="Paulo Alonso">
+                        <path d="M0,0v540h540V0H0ZM477.21,477.21H62.79V62.79h414.42v414.42Z"/>
+                        <path d="M200.93,365.34v74.19h238.6V126.74l-62.79,62.79c-18.51,18.51-161.51,161.51-175.81,175.81ZM376.74,376.74h-98.41c22.61-22.61,75.31-75.31,98.41-98.41v98.41Z"/>
+                        <path d="M163.26,351.63l251.16-251.16H100.47v339.07h62.79v-87.91ZM163.26,163.26h98.41c-22.61,22.61-75.31,75.31-98.41,98.41v-98.41Z"/>
+                    </svg>
+                </div>
                 <div class="links">
-                    <a href="index.html" class="underLineLink">Index</a>
-                    <a href="approach.html" class="underLineLink">Approach</a>
+                    <a href="index.html" class="underLineLink" data-i18n="nav.index">Index</a>
+                    <a href="approach.html" class="underLineLink" data-i18n="nav.approach">Approach</a>
+                    <div class="lang-switch">
+                        <button class="lang-opt" data-lang="pt-br">PT</button>
+                        <span class="lang-sep">·</span>
+                        <button class="lang-opt" data-lang="en-us">EN</button>
+                    </div>
                 </div>
             </div>
 
             <div id="MyClockDisplay" class="clock"></div>
-            <h3 class="font16">Based in <br> São Paulo, Brazil</h3>
+            <h3 class="font16" data-i18n-html="nav.location">Based in <br> São Paulo, Brazil</h3>
         </nav>
         <!-- Header -->
         <section class="header">
             <div class="wrapper">
                  <img src="assets/me.png" alt="Paulo Alonso" class="headerImg" width="auto" height="auto" />
                 <div class="text">
-                    <p class="font16">Currently available for freelance projects</p>
-                    <p class="font16">
+                    <p class="font16" data-i18n="index.available">Currently available for freelance projects</p>
+                    <p class="font16" data-i18n="index.header_desc">
                         Graphic designer focused on UI/UX, combining creativity and artificial intelligence to create innovative digital experiences.
                     </p>
                 </div>
@@ -81,17 +92,17 @@
         <section class="about">
             <!-- About -->
             <div class="reveal">
-                <h1 class="fontLarge">About</h1>
+                <h1 class="fontLarge" data-i18n="index.about">About</h1>
             </div>
 
             <div class="about_text">
-                <p class="font16">
+                <p class="font16" data-i18n="index.about_p1">
                     Starting my career as a graphic designer and expanding my expertise into UI/UX and artificial intelligence
                     has given me a unique perspective. This blend of creativity and advanced technology enables me to design
                     digital experiences that are not only visually compelling but also intelligently optimized for user engagement
                     and innovation.
                 </p>
-                <h2 class="fontMedium">
+                <h2 class="fontMedium" data-i18n="index.about_h2">
                     A visionary designer with a talent for crafting immersive digital experiences that blend innovation
                     and intelligent design to engage and inspire users.
                 </h2>
@@ -99,12 +110,12 @@
             <!-- Tools -->
             <div class="tools" data-textcolor="#e9e9e9" data-bgcolor="#181818">
                 <div class="tools_heading">
-                    <p class="font16">Core Tools</p>
+                    <p class="font16" data-i18n="index.tools_heading">Core Tools</p>
                 </div>
                 <div class="tools_wrapper">
                     <div>
                         <h2 class="fontMedium">Adobe Photoshop</h2>
-                        <p class="font16">
+                        <p class="font16" data-i18n="index.photoshop_desc">
                             Dive into the realm of visual precision and creative control with Adobe Photoshop, a cornerstone of my
                             design workflow. From polished compositions to surreal visual storytelling, my projects reflect the full power
                             of Photoshop in shaping compelling and high-impact aesthetics.
@@ -112,7 +123,7 @@
                     </div>
                     <div>
                         <h2 class="fontMedium">Adobe Illustrator</h2>
-                        <p class="font16">
+                        <p class="font16" data-i18n="index.illustrator_desc">
                             Explore the world of vector mastery where every curve, line, and form is intentional. With Adobe Illustrator, I
                             bring clarity and boldness to branding, iconography, and scalable design systems, crafting visuals that
                             remain sharp, timeless, and unmistakably distinctive.
@@ -120,7 +131,7 @@
                     </div>
                     <div>
                         <h2 class="fontMedium">Figma</h2>
-                        <p class="font16">
+                        <p class="font16" data-i18n="index.figma_desc">
                             At the intersection of collaboration and innovation, Figma empowers me to design intuitive UI/UX systems
                             with real-time precision. My portfolio reflects dynamic interfaces, wireframes, and prototypes where form
                             meets function, all within a tool built for modern, agile design.
@@ -128,7 +139,7 @@
                     </div>
                     <div>
                         <h2 class="fontMedium">ComfyUI</h2>
-                        <p class="font16">
+                        <p class="font16" data-i18n="index.comfyui_desc">
                             Step into the future of visual creation with ComfyUI — a powerful AI-driven platform for generating images
                             and videos through custom-trained models and dynamic workflows. My creative process harnesses its node-
                             based interface to explore the boundaries of generative design, transforming prompts into expressive visuals
@@ -144,15 +155,15 @@
             <!-- Heading -->
             <div class="work_heading">
                 <div class="reveal">
-                    <h1 class="fontLarge">Selected</h1>
+                    <h1 class="fontLarge" data-i18n="index.selected">Selected</h1>
                 </div>
                 <div class="reveal">
-                    <h1 class="fontLarge">Works</h1>
+                    <h1 class="fontLarge" data-i18n="index.works">Works</h1>
                 </div>
 
                 <!-- paragraph -->
                 <div class="txt">
-                    <p class="font16">
+                    <p class="font16" data-i18n="index.works_desc">
                         Discover a showcase of impactful projects where my expertise in graphic design, UI/UX, and artificial
                         intelligence converge to elevate digital experiences. These works reflect my journey from conceptual
                         thinking to intelligent design execution, demonstrating a commitment to creating visually compelling,
@@ -236,25 +247,25 @@
                 <!-- Heading -->
                 <div class="footer_heading">
                     <div class="reveal">
-                        <h1 class="fontLarge">Reach</h1>
+                        <h1 class="fontLarge" data-i18n="footer.reach">Reach</h1>
                     </div>
                     <div class="reveal">
-                        <h1 class="fontLarge">Out</h1>
+                        <h1 class="fontLarge" data-i18n="footer.out">Out</h1>
                     </div>
                 </div>
                 <!-- footer inner -->
                 <div class="footer_inner">
-                    <p class="font16">Currently available <br> for freelance projects</p>
+                    <p class="font16" data-i18n-html="footer.available">Currently available <br> for freelance projects</p>
                     <div class="footer_col">
-                        <p class="font16">Based in <br> São Paulo, Brazil</p>
+                        <p class="font16" data-i18n-html="footer.location">Based in <br> São Paulo, Brazil</p>
                         <h3 class="fontSmall">
-                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me!
+                            <span data-i18n="footer.invite">For any collaborative endeavors or inquiries, I warmly invite you to connect with me!</span>
 
                             <a href="mailto:pauloa65@gmail.com" class="underLineLink">pauloa65@gmail.com</a>
                         </h3>
                     </div>
                     <div class="footer_col2">
-                        <p class="font16"> All rights reserved.</p>
+                        <p class="font16" data-i18n="footer.rights"> All rights reserved.</p>
                         <div class="footer_inner_links">
                             <a href="https://www.behance.net/pauloalonso" class="underLineLink" target="_blank" rel="noopener noreferrer">Behance</a>
                             <a href="https://dribbble.com/pauloalonso1" class="underLineLink" target="_blank" rel="noopener noreferrer">Dribbble</a>
@@ -291,6 +302,8 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- i18n -->
+    <script src="js/i18n.js"></script>
     <!-- Custom -->
     <script src="js/main.js" type="module"></script>
 </body>

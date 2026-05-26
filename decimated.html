@@ -459,14 +459,25 @@
         <!-- Navbar -->
         <nav>
             <div class="wrapper">
-                <h1>Paulo Alonso</h1>
+                <div class="nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" aria-label="Paulo Alonso">
+                        <path d="M0,0v540h540V0H0ZM477.21,477.21H62.79V62.79h414.42v414.42Z"/>
+                        <path d="M200.93,365.34v74.19h238.6V126.74l-62.79,62.79c-18.51,18.51-161.51,161.51-175.81,175.81ZM376.74,376.74h-98.41c22.61-22.61,75.31-75.31,98.41-98.41v98.41Z"/>
+                        <path d="M163.26,351.63l251.16-251.16H100.47v339.07h62.79v-87.91ZM163.26,163.26h98.41c-22.61,22.61-75.31,75.31-98.41,98.41v-98.41Z"/>
+                    </svg>
+                </div>
                 <div class="links">
-                    <a href="index.html" class="underLineLink">Index</a>
-                    <a href="approach.html" class="underLineLink">Approach</a>
+                    <a href="index.html" class="underLineLink" data-i18n="nav.index">Index</a>
+                    <a href="approach.html" class="underLineLink" data-i18n="nav.approach">Approach</a>
+                    <div class="lang-switch">
+                        <button class="lang-opt" data-lang="pt-br">PT</button>
+                        <span class="lang-sep">·</span>
+                        <button class="lang-opt" data-lang="en-us">EN</button>
+                    </div>
                 </div>
             </div>
             <div id="MyClockDisplay" class="clock"></div>
-            <h3 class="font16">Based in <br> São Paulo, Brazil</h3>
+            <h3 class="font16" data-i18n-html="nav.location">Based in <br> São Paulo, Brazil</h3>
         </nav>
 
         <!-- Hero -->
@@ -477,7 +488,7 @@
             </div>
             <div class="p-scroll-hint">
                 <i class="fa-solid fa-chevron-down"></i>
-                Scroll
+                <span data-i18n="project.scroll">Scroll</span>
             </div>
             <div class="p-hero-body">
                 <div class="p-hero-title">
@@ -498,19 +509,19 @@
         <!-- Info Strip -->
         <div class="p-strip">
             <div class="p-strip-item">
-                <p class="p-strip-label">Client</p>
+                <p class="p-strip-label" data-i18n="project.client">Client</p>
                 <p class="p-strip-value">Decimated Game</p>
             </div>
             <div class="p-strip-item">
-                <p class="p-strip-label">Services</p>
+                <p class="p-strip-label" data-i18n="project.services">Services</p>
                 <p class="p-strip-value">UI Design<br>UX Design</p>
             </div>
             <div class="p-strip-item">
-                <p class="p-strip-label">Tools</p>
+                <p class="p-strip-label" data-i18n="project.tools">Tools</p>
                 <p class="p-strip-value">Figma · Illustrator<br>Photoshop</p>
             </div>
             <div class="p-strip-item">
-                <p class="p-strip-label">Year</p>
+                <p class="p-strip-label" data-i18n="project.year">Year</p>
                 <p class="p-strip-value">2025</p>
             </div>
         </div>
@@ -519,8 +530,8 @@
         <div class="p-overview">
             <div class="p-overview-num">03</div>
             <div class="p-overview-text">
-                <h2>UI/UX for a <em>post-apocalyptic</em><br>Web3 survival game.</h2>
-                <p>
+                <h2 data-i18n-html="decimated.overview_h2">UI/UX for a <em>post-apocalyptic</em><br>Web3 survival game.</h2>
+                <p data-i18n="decimated.overview_p">
                     Decimated is a post-apocalyptic web3 survival game set in a dystopian cyberpunk world.
                     Built on Unreal Engine, it merges high-end graphics with blockchain technology — allowing
                     players to explore, trade, and fight across a devastated Earth. Players earn crypto rewards
@@ -533,15 +544,15 @@
 
         <!-- Section 01 -->
         <div class="p-label-row">
-            <h2>Game Interface</h2>
+            <h2 data-i18n="decimated.s1_label">Game Interface</h2>
             <span>(01 / 03)</span>
         </div>
         <div class="p-section">
             <div class="p-section-inner">
                 <div class="p-section-left">
                     <p class="p-section-num">01</p>
-                    <h3 class="p-section-title">Cyberpunk<br>Aesthetic</h3>
-                    <p class="p-section-desc">
+                    <h3 class="p-section-title" data-i18n-html="decimated.s1_title">Cyberpunk<br>Aesthetic</h3>
+                    <p class="p-section-desc" data-i18n="decimated.s1_desc">
                         Crafted with a cyberpunk aesthetic that immerses players in Decimated's post-apocalyptic
                         world. Every interface element — from HUD overlays to menus — reflects the gritty,
                         high-tech tension of the game universe while keeping usability front and center.
@@ -556,15 +567,15 @@
 
         <!-- Section 02 -->
         <div class="p-label-row">
-            <h2>Blockchain Integration</h2>
+            <h2 data-i18n="decimated.s2_label">Blockchain Integration</h2>
             <span>(02 / 03)</span>
         </div>
         <div class="p-section flip">
             <div class="p-section-inner">
                 <div class="p-section-left">
                     <p class="p-section-num">02</p>
-                    <h3 class="p-section-title">Web3 &amp;<br>Player Economy</h3>
-                    <p class="p-section-desc">
+                    <h3 class="p-section-title" data-i18n-html="decimated.s2_title">Web3 &amp;<br>Player Economy</h3>
+                    <p class="p-section-desc" data-i18n="decimated.s2_desc">
                         Seamless blockchain integration designed for real players, not just crypto natives.
                         The UI abstracts wallet management and token interactions behind intuitive flows —
                         making digital ownership of in-game assets feel natural and rewarding.
@@ -579,15 +590,15 @@
 
         <!-- Section 03 -->
         <div class="p-label-row">
-            <h2>User-Centered Design</h2>
+            <h2 data-i18n="decimated.s3_label">User-Centered Design</h2>
             <span>(03 / 03)</span>
         </div>
         <div class="p-section">
             <div class="p-section-inner">
                 <div class="p-section-left">
                     <p class="p-section-num">03</p>
-                    <h3 class="p-section-title">Combat &amp;<br>Mission Flows</h3>
-                    <p class="p-section-desc">
+                    <h3 class="p-section-title" data-i18n-html="decimated.s3_title">Combat &amp;<br>Mission Flows</h3>
+                    <p class="p-section-desc" data-i18n="decimated.s3_desc">
                         User-centered design across every flow — from lobby and character selection to
                         PvP combat HUD and mission tracking. Designed to minimize cognitive load in
                         high-intensity moments while preserving the dark, immersive visual identity.
@@ -602,7 +613,7 @@
 
         <!-- Gallery -->
         <div class="p-label-row dk">
-            <h2>Screens Gallery</h2>
+            <h2 data-i18n="decimated.s4_label">Screens Gallery</h2>
             <span>11 screens</span>
         </div>
         <div class="p-gallery">
@@ -644,11 +655,11 @@
         <!-- Back + Next -->
         <a href="index.html" class="p-back">
             <i class="fa-solid fa-arrow-left"></i>
-            Back to Index
+            <span data-i18n="project.back">Back to Index</span>
         </a>
         <a href="index.html" class="p-next">
             <div class="p-next-left">
-                <span class="p-next-label">Back to all projects</span>
+                <span class="p-next-label" data-i18n="project.back_all">Back to all projects</span>
                 <span class="p-next-title">Index</span>
             </div>
             <i class="fa-solid fa-arrow-right p-next-arrow"></i>
@@ -659,23 +670,23 @@
             <div id="footer_details" data-textcolor="#181818" data-bgcolor="#e9e9e9">
                 <div class="footer_heading">
                     <div class="reveal">
-                        <h1 class="fontLarge">Reach</h1>
+                        <h1 class="fontLarge" data-i18n="footer.reach">Reach</h1>
                     </div>
                     <div class="reveal">
-                        <h1 class="fontLarge">Out</h1>
+                        <h1 class="fontLarge" data-i18n="footer.out">Out</h1>
                     </div>
                 </div>
                 <div class="footer_inner">
-                    <p class="font16">Currently available <br> for freelance projects</p>
+                    <p class="font16" data-i18n-html="footer.available">Currently available <br> for freelance projects</p>
                     <div class="footer_col">
-                        <p class="font16">Based in <br> São Paulo, Brazil</p>
+                        <p class="font16" data-i18n-html="footer.location">Based in <br> São Paulo, Brazil</p>
                         <h3 class="fontSmall">
-                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me!
+                            <span data-i18n="footer.invite">For any collaborative endeavors or inquiries, I warmly invite you to connect with me!</span>
                             <a href="mailto:pauloa65@gmail.com" class="underLineLink">pauloa65@gmail.com</a>
                         </h3>
                     </div>
                     <div class="footer_col2">
-                        <p class="font16">All rights reserved.</p>
+                        <p class="font16" data-i18n="footer.rights">All rights reserved.</p>
                         <div class="footer_inner_links">
                             <a href="https://www.behance.net/pauloalonso" class="underLineLink" target="_blank" rel="noopener noreferrer">Behance</a>
                             <a href="https://dribbble.com/pauloalonso1" class="underLineLink" target="_blank" rel="noopener noreferrer">Dribbble</a>
@@ -707,6 +718,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js" type="module"></script>
 
 </body>
