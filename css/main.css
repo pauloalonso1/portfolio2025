@@ -89,6 +89,10 @@ html.has-scroll-smooth {
   .reveal h1 {
     transform: translateY(15vw);
   }
+  .p-hero {
+    height: 70vh;
+    min-height: 300px;
+  }
 }
 @media (max-width: 560px) {
   .fontLarge {
@@ -103,6 +107,10 @@ html.has-scroll-smooth {
   }
   .reveal h1 {
     transform: translateY(20vw);
+  }
+  .p-hero {
+    height: 80vw;
+    min-height: 280px;
   }
 }
 a {
