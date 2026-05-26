@@ -78,45 +78,26 @@ function setupAnimations() {
         });
     });
 
-    let counter = { value: 0 };
-
-    /* loader */
-    gsap.to(counter, {
-        duration: 2,
-        value: 100,
-        ease: "none",
-        onUpdate: function () {
-
-            const currentPercentage = Math.ceil(counter.value);
-            document.getElementById("counter").textContent = currentPercentage + '%';
-
-            gsap.to(".bar2", {
-                width: currentPercentage + "%",
-                ease: "none",
-                duration: 0.1
-            });
-        },
-        onComplete: () => {
-            var tl4 = gsap.timeline();
-            tl4.to(".counter", {
-                ease: "power4.inOut",
-                opacity: 0,
-                duration: 0.5,
-            });
-
-            tl4.to(".bar", {
-                ease: "power4.inOut",
-                opacity: 0,
-                duration: 0.5,
-            }, '-=.3');
-
-            tl4.to(".loader-container", {
-                y: "-120%",
-                ease: "power4.inOut",
-                duration: 1.6,
-            });
-        }
-    });
+    const loaderEl = document.querySelector(".loader-container");
+    if (loaderEl) {
+        let counter = { value: 0 };
+        gsap.to(counter, {
+            duration: 2,
+            value: 100,
+            ease: "none",
+            onUpdate: function () {
+                const currentPercentage = Math.ceil(counter.value);
+                document.getElementById("counter").textContent = currentPercentage + '%';
+                gsap.to(".bar2", { width: currentPercentage + "%", ease: "none", duration: 0.1 });
+            },
+            onComplete: () => {
+                var tl4 = gsap.timeline();
+                tl4.to(".counter", { ease: "power4.inOut", opacity: 0, duration: 0.5 });
+                tl4.to(".bar", { ease: "power4.inOut", opacity: 0, duration: 0.5 }, '-=.3');
+                tl4.to(".loader-container", { y: "-120%", ease: "power4.inOut", duration: 1.6 });
+            }
+        });
+    }
 
 
     ScrollTrigger.refresh();

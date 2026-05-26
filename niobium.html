@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Alonso">
+    <meta name="description" content="Niobium Brand Mark — Visual identity for a Brazilian AI agency, combining tech innovation and premium market positioning.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Niobium Brand Mark | Paulo Alonso">
+    <meta property="og:description" content="Visual identity for Niobium, a Brazilian AI agency. Logo and brand elements highlighting tech innovation and premium market positioning.">
+    <meta property="og:image" content="https://media.contra.com/image/upload/fl_progressive/q_auto:best/vbl86clk8ugwfajyrs0f.webp">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Niobium Brand Mark | Paulo Alonso">
+    <meta name="twitter:image" content="https://media.contra.com/image/upload/fl_progressive/q_auto:best/vbl86clk8ugwfajyrs0f.webp">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Niobium Brand Mark | Paulo Alonso</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* ── Project page overrides ── */
+        .proj-hero {
+            padding-top: 160px;
+            padding-bottom: 6vw;
+        }
+
+        .proj-hero-inner {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 4vw;
+        }
+
+        .proj-hero h1 {
+            line-height: 90%;
+        }
+
+        .proj-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-bottom: 1.2vw;
+            min-width: 180px;
+            text-align: right;
+        }
+
+        .proj-meta span {
+            font-size: 13px;
+            color: #5f5f5f;
+            font-family: TTHovesR;
+        }
+
+        .proj-meta p {
+            font-size: 14px;
+            color: #5f5f5f;
+            font-family: TTHovesR;
+            letter-spacing: -0.2px;
+        }
+
+        /* ── Cover ── */
+        .proj-cover {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .proj-cover img {
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── Info row ── */
+        .proj-info {
+            display: flex;
+            gap: 6vw;
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+            border-bottom: 1px solid rgba(24,24,24,0.15);
+        }
+
+        .proj-info-desc {
+            flex: 1;
+        }
+
+        .proj-info-desc p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 540px;
+            color: #323232;
+        }
+
+        .proj-info-side {
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            min-width: 220px;
+        }
+
+        .proj-info-col p:first-child {
+            font-size: 12px;
+            color: #5f5f5f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-family: TTHovesR;
+        }
+
+        .proj-info-col p {
+            font-size: 15px;
+            color: #181818;
+            line-height: 1.8;
+        }
+
+        /* ── Sections ── */
+        .proj-section {
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+            border-bottom: 1px solid rgba(24,24,24,0.15);
+        }
+
+        .proj-section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+            margin-bottom: 3vw;
+        }
+
+        .proj-section-header span {
+            font-size: 13px;
+            color: #5f5f5f;
+            font-family: TTHovesR;
+        }
+
+        .proj-section-header h2 {
+            font-size: 3.5vw;
+        }
+
+        .proj-section-body {
+            display: flex;
+            gap: 6vw;
+            align-items: flex-start;
+        }
+
+        .proj-section-text {
+            width: 30%;
+            font-size: 16px;
+            line-height: 1.65;
+            color: #5f5f5f;
+            padding-top: 0.5vw;
+        }
+
+        .proj-section-img {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .proj-section-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ── Full-width image variant ── */
+        .proj-section.full .proj-section-body {
+            flex-direction: column;
+        }
+
+        .proj-section.full .proj-section-text {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* ── Grid for application images ── */
+        .proj-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2vw;
+            margin-top: 4vw;
+        }
+
+        .proj-grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .proj-grid .span-full {
+            grid-column: 1 / -1;
+        }
+
+        /* ── Color swatches ── */
+        .proj-colors {
+            display: flex;
+            gap: 2vw;
+            margin-top: 4vw;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .color-block {
+            width: 180px;
+            height: 180px;
+            border-radius: 4px;
+        }
+
+        .color-block.green { background: #C8FF00; }
+        .color-block.dark  { background: #212121; border: 1px solid rgba(24,24,24,0.1); }
+
+        .color-label {
+            font-size: 13px;
+            color: #5f5f5f;
+            font-family: TTHovesR;
+        }
+
+        .color-hex {
+            font-size: 15px;
+            color: #181818;
+            letter-spacing: -0.3px;
+        }
+
+        /* ── Back / Next nav ── */
+        .proj-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+        }
+
+        .proj-nav a {
+            font-size: 16px;
+            color: #181818;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: opacity 0.2s;
+        }
+
+        .proj-nav a:hover { opacity: 0.5; }
+
+        .proj-nav-next {
+            text-align: right;
+        }
+
+        .proj-nav-next p {
+            font-size: 13px;
+            color: #5f5f5f;
+            font-family: TTHovesR;
+            margin-bottom: 6px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 1068px) {
+            .proj-section-header h2 { font-size: 5vw; }
+        }
+
+        @media (max-width: 768px) {
+            .proj-hero { padding-top: 130px; }
+
+            .proj-hero-inner { flex-direction: column; align-items: flex-start; gap: 6vw; }
+
+            .proj-meta { text-align: left; }
+
+            .proj-cover img { height: 50vw; }
+
+            .proj-info { flex-direction: column; gap: 10vw; }
+
+            .proj-info-side { flex-direction: row; flex-wrap: wrap; gap: 8vw; }
+
+            .proj-section-body { flex-direction: column; }
+
+            .proj-section-text { width: 100%; }
+
+            .proj-section-header h2 { font-size: 7vw; }
+
+            .color-block { width: 130px; height: 130px; }
+        }
+
+        @media (max-width: 560px) {
+            .proj-grid { grid-template-columns: 1fr; }
+
+            .proj-section-header h2 { font-size: 10vw; }
+
+            .proj-colors { gap: 5vw; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main" data-textcolor="#181818" data-bgcolor="#e9e9e9">
+
+        <!-- Navbar -->
+        <nav>
+            <div class="wrapper">
+                <h1>Paulo Alonso</h1>
+                <div class="links">
+                    <a href="index.html" class="underLineLink">Index</a>
+                    <a href="approach.html" class="underLineLink">Approach</a>
+                </div>
+            </div>
+            <div id="MyClockDisplay" class="clock"></div>
+            <h3 class="font16">Based in <br> São Paulo, Brazil</h3>
+        </nav>
+
+        <!-- Hero -->
+        <section class="proj-hero">
+            <div class="proj-hero-inner">
+                <div class="reveal">
+                    <h1 class="fontLarge">Niobium</h1>
+                </div>
+                <div class="proj-meta">
+                    <span>(01)</span>
+                    <p>Brand Mark</p>
+                    <p>Brand Identity</p>
+                    <p>2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cover Image -->
+        <div class="proj-cover">
+            <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/vbl86clk8ugwfajyrs0f.webp"
+                alt="Niobium Brand Mark — primary visual">
+        </div>
+
+        <!-- Project Info -->
+        <section class="proj-info">
+            <div class="proj-info-desc">
+                <p>
+                    Visual identity for Niobium, a Brazilian AI agency. Logo and brand elements
+                    highlighting tech innovation and premium market positioning. The design communicates
+                    advanced technology, continuous innovation, and intelligent solutions through modern
+                    and angular characteristics — conveying movement and precision.
+                </p>
+            </div>
+            <div class="proj-info-side">
+                <div class="proj-info-col">
+                    <p>Services</p>
+                    <p>Brand Design</p>
+                    <p>Graphic Design</p>
+                    <p>UI Design</p>
+                </div>
+                <div class="proj-info-col">
+                    <p>Tools</p>
+                    <p>Adobe Illustrator</p>
+                    <p>Adobe Photoshop</p>
+                    <p>Figma</p>
+                </div>
+                <div class="proj-info-col">
+                    <p>Year</p>
+                    <p>2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 01 — Brand Mark -->
+        <section class="proj-section">
+            <div class="proj-section-header">
+                <span>(01)</span>
+                <h2 class="fontMedium">Brand Mark</h2>
+            </div>
+            <div class="proj-section-body">
+                <p class="proj-section-text">
+                    The Niobium symbol represents advanced technology, continuous innovation, and
+                    intelligent solutions. Modern and angular characteristics convey movement and
+                    precision. The vibrant green symbolizes growth and innovation, while strong
+                    typography reinforces trust and clarity in communications.
+                </p>
+                <div class="proj-section-img">
+                    <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/vbl86clk8ugwfajyrs0f.webp"
+                        alt="Niobium brand mark construction">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02 — Spacing -->
+        <section class="proj-section">
+            <div class="proj-section-header">
+                <span>(02)</span>
+                <h2 class="fontMedium">The Spacing</h2>
+            </div>
+            <div class="proj-section-body">
+                <p class="proj-section-text">
+                    The protective area establishes the clear space and exclusion zone around the logo
+                    to maintain visibility and integrity in all applications. The spacing is defined
+                    using a 1x proportion derived from the height of the smallest square that can be
+                    formed by the internal line thickness of the Niobium symbol.
+                </p>
+                <div class="proj-section-img">
+                    <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/isochlhchcmaxxzebwrn.webp"
+                        alt="Niobium logo spacing and clear space rules">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03 — Icon -->
+        <section class="proj-section">
+            <div class="proj-section-header">
+                <span>(03)</span>
+                <h2 class="fontMedium">Icon</h2>
+            </div>
+            <div class="proj-section-body">
+                <p class="proj-section-text">
+                    The Niobium icon serves as the visual synthesis of the identity, maintaining
+                    strength and legibility across all applications. Optimized for apps, shortcuts,
+                    interfaces, and social platforms — it carries the full weight of the brand
+                    in its most reduced form.
+                </p>
+                <div class="proj-section-img">
+                    <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/kukyj4zhs4zhp6nnhmwd.webp"
+                        alt="Niobium app icon variations">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 04 — Tints & Tones -->
+        <section class="proj-section full">
+            <div class="proj-section-header">
+                <span>(04)</span>
+                <h2 class="fontMedium">Tints &amp; Tones</h2>
+            </div>
+            <div class="proj-section-body">
+                <p class="proj-section-text">
+                    The color palette distills the brand's personality into two essential forces:
+                    Niobium Green — a vibrant lime (#C8FF00) representing energy and technological
+                    advancement — and Niobium Gray — a deep charcoal (#212121) representing
+                    solidity, authority, and trust.
+                </p>
+            </div>
+            <div class="proj-colors">
+                <div class="color-swatch">
+                    <div class="color-block green"></div>
+                    <p class="color-label">Niobium Green</p>
+                    <p class="color-hex">#C8FF00</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-block dark"></div>
+                    <p class="color-label">Niobium Gray</p>
+                    <p class="color-hex">#212121</p>
+                </div>
+            </div>
+            <div class="proj-section-img" style="margin-top: 4vw;">
+                <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/gpmp4gzvgvblrpqfzezw.webp"
+                    alt="Niobium color palette">
+            </div>
+        </section>
+
+        <!-- Section 05 — Applications -->
+        <section class="proj-section full" style="border-bottom: none;">
+            <div class="proj-section-header">
+                <span>(05)</span>
+                <h2 class="fontMedium">Applications</h2>
+            </div>
+            <div class="proj-section-body">
+                <p class="proj-section-text">
+                    The identity applied across real-world touchpoints — demonstrating flexibility,
+                    consistency, and brand strength across digital and physical surfaces.
+                </p>
+            </div>
+            <div class="proj-grid">
+                <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/rtaiaoxxxsiuq80q94kf.webp"
+                    alt="Niobium logo application 1">
+                <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/llunspmlzkahumzmva9s.webp"
+                    alt="Niobium logo application 2">
+                <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/wa5lqklq9v6oaejvduq2.webp"
+                    alt="Niobium logo application 3" class="span-full">
+                <img src="https://media.contra.com/image/upload/fl_progressive/q_auto:best/eknuzwktalrlc1rdygtn.webp"
+                    alt="Niobium logo application 4" class="span-full">
+            </div>
+        </section>
+
+        <!-- Project navigation -->
+        <div class="proj-nav">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Index
+            </a>
+            <div class="proj-nav-next">
+                <p>Next project</p>
+                <a href="rizoo.html">
+                    Rizoo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer_details" data-textcolor="#181818" data-bgcolor="#e9e9e9">
+                <div class="footer_heading">
+                    <div class="reveal">
+                        <h1 class="fontLarge">Reach</h1>
+                    </div>
+                    <div class="reveal">
+                        <h1 class="fontLarge">Out</h1>
+                    </div>
+                </div>
+                <div class="footer_inner">
+                    <p class="font16">Currently available <br> for freelance projects</p>
+                    <div class="footer_col">
+                        <p class="font16">Based in <br> São Paulo, Brazil</p>
+                        <h3 class="fontSmall">
+                            For any collaborative endeavors or inquiries, I warmly invite you to connect with me!
+                            <a href="mailto:pauloa65@gmail.com" class="underLineLink">pauloa65@gmail.com</a>
+                        </h3>
+                    </div>
+                    <div class="footer_col2">
+                        <p class="font16">All rights reserved.</p>
+                        <div class="footer_inner_links">
+                            <a href="https://www.behance.net/pauloalonso" class="underLineLink" target="_blank" rel="noopener noreferrer">Behance</a>
+                            <a href="https://dribbble.com/pauloalonso1" class="underLineLink" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                            <a href="https://pauloalonsoy7wgsrcv.contra.com" class="underLineLink" target="_blank" rel="noopener noreferrer">Contra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Footer_Social" data-textcolor="#e9e9e9" data-bgcolor="#181818">
+                <div class="footer_wrapper">
+                    <div class="footer_container">
+                        <div>
+                            <a href="https://www.instagram.com/pauloalonsogd" class="footer_text" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/pauloa65" class="footer_text" target="_blank" rel="noopener noreferrer">Telegram</a>
+                            <a href="https://x.com/pauloalonso" class="footer_text" target="_blank" rel="noopener noreferrer">X</a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/paulo-alonso/" class="footer_text" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+</html>
